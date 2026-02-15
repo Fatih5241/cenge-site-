@@ -1,3 +1,4 @@
+="54012"}
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -6,196 +7,174 @@
 
 <title>Cenge Karosseriezentrum</title>
 
+<link rel="stylesheet" href="style.css">
+
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
-
 body{
-background:#0b0b0b;
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(180deg,#050505,#0b0b0b 40%,#000);
 color:white;
 }
 
-/* HEADER */
-
-.main-header{
+/* Header /
+.header{
 position:fixed;
 top:0;
 left:0;
 width:100%;
+padding:18px 0;
 background:rgba(0,0,0,0.75);
 backdrop-filter:blur(10px);
-padding:18px 10px;
 text-align:center;
-z-index:999;
-border-bottom:1px solid rgba(255,255,255,0.05);
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
-.logo-top{
-display:block;
-color:#ff2b2b;
-font-size:30px;
-font-weight:700;
+.logo{
+color:#ff2a2a;
+font-size:34px;
+font-weight:800;
 letter-spacing:6px;
 }
 
-.logo-bottom{
-display:block;
-color:#bfbfbf;
+.sublogo{
 font-size:12px;
 letter-spacing:4px;
-margin-top:4px;
+color:#aaa;
 }
 
-/* HERO */
-
+/ Hero /
 .hero{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.95)),
-url("https://images.unsplash.com/photo-1617814076668-7f24f8206dfa?q=80&w=1600&auto=format&fit=crop");
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+padding-top:140px;
+padding-bottom:100px;
 text-align:center;
-padding:20px;
+max-width:900px;
+margin:auto;
 }
 
 .hero h1{
-font-size:34px;
-max-width:520px;
-margin-bottom:18px;
+font-size:42px;
+line-height:1.2;
+margin-bottom:15px;
 }
 
 .hero p{
-color:#cfcfcf;
-margin-bottom:28px;
+color:#bbb;
+font-size:18px;
+margin-bottom:35px;
 }
 
 .btn{
-background:#ff2b2b;
+display:inline-block;
+background:#ff2a2a;
 color:white;
-padding:16px 32px;
+padding:18px 38px;
 border-radius:14px;
-text-decoration:none;
 font-weight:bold;
-box-shadow:0 0 25px rgba(255,40,40,.6);
+text-decoration:none;
+box-shadow:0 0 25px rgba(255,40,40,0.6);
+transition:.25s;
 }
 
-/* SECTIONS */
+.btn:hover{
+transform:scale(1.05);
+}
 
+/ Leistungen /
 .section{
-padding:70px 18px;
-text-align:center;
+padding:70px 20px;
+max-width:900px;
+margin:auto;
 }
 
 .section h2{
-font-size:28px;
-margin-bottom:28px;
+text-align:center;
+font-size:32px;
+margin-bottom:40px;
 }
 
-/* CARDS */
-
-.card{
-background:#141414;
+.service{
+background:rgba(255,255,255,0.05);
+border-radius:18px;
 padding:18px;
-margin:12px auto;
-border-radius:16px;
-max-width:520px;
-border:1px solid rgba(255,255,255,0.06);
-box-shadow:0 0 18px rgba(0,0,0,0.5);
+margin-bottom:15px;
+border:1px solid rgba(255,255,255,0.08);
 }
 
-/* LOCATION */
-
+/ Standort /
 .location{
-line-height:1.8;
-color:#d0d0d0;
+text-align:center;
+line-height:1.7;
 }
 
-.route{
+.hours{
 margin-top:20px;
-display:inline-block;
+color:#ccc;
 }
 
-/* FOOTER */
-
+/ Footer */
 footer{
 margin-top:60px;
-padding:35px 10px;
+padding:40px 0;
+background:#000;
 text-align:center;
-background:#050505;
-border-top:1px solid rgba(255,255,255,0.06);
+color:#aaa;
+font-size:14px;
 }
 
 footer a{
-color:#4da6ff;
+color:#4da3ff;
 text-decoration:none;
-margin:0 8px;
+margin:0 10px;
 }
-
 </style>
 </head>
 
 <body>
 
-<header class="main-header">
-<span class="logo-top">CENGE</span>
-<span class="logo-bottom">KAROSSERIEZENTRUM</span>
-</header>
+<div class="header">
+<div class="logo">CENGE</div>
+<div class="sublogo">KAROSSERIEZENTRUM</div>
+</div>
 
 <section class="hero">
 <h1>Karosserie & Fahrzeugtechnik in Bergkamen</h1>
 <p>30 Jahre Erfahrung – Qualität & zuverlässiger Service</p>
-<a class="btn" href="tel:+4917644496134">Jetzt anrufen</a>
+<a class="btn" href="tel:+491000000000">Jetzt anrufen</a>
 </section>
 
 <section class="section">
 <h2>Unsere Leistungen</h2>
-
-<div class="card">Unfallreparatur (Versicherungsschäden)</div>
-<div class="card">Karosseriearbeiten</div>
-<div class="card">Autoglas-Service</div>
-<div class="card">Reifenservice & Radwechsel</div>
-<div class="card">Klimaservice</div>
-<div class="card">Bremsenservice & Inspektion</div>
-
+<div class="service">Unfallreparatur (Versicherungsschäden)</div>
+<div class="service">Karosseriearbeiten</div>
+<div class="service">Autoglas-Service</div>
+<div class="service">Reifenservice & Radwechsel</div>
+<div class="service">Klimaservice</div>
+<div class="service">Bremsenservice & Inspektion</div>
 </section>
 
 <section class="section location">
 <h2>Standort & Anfahrt</h2>
-
 Rüntherstr. 129<br>
-59192 Bergkamen
+59192 Bergkamen<br><br>
 
-<br><br>
-
-<a class="btn route" target="_blank"
-href="https://maps.google.com/?q=Rüntherstr.+129+59192+Bergkamen">
+<a class="btn" target="_blank"
+href="https://maps.google.com/?q=Rüntherstr+129+59192+Bergkamen">
 Route planen
 </a>
 
-<br><br>
-
+<div class="hours">
 Mo–Fr: 08:00 – 18:00<br>
 Sa: 09:00 – 14:00<br>
 So: Geschlossen
-
+</div>
 </section>
 
 <footer>
-© 2026 Cenge Karosseriezentrum
-<br><br>
+© 2026 Cenge Karosseriezentrum<br>
 <a href="datenschutz.html">Datenschutz</a> |
 <a href="impressum.html">Impressum</a>
 </footer>
 
-</body>
-</html>
+</body
